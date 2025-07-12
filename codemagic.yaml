@@ -1,8 +1,3 @@
-workflows:
-  build_python:
-    name: Build Python App
-    environment:
-      python: "3.9"
-    scripts:
-      - pip install -r requirements.txt
-      - python main.py
+scripts:
+  - pip install -r requirements.txt
+  - python main.py
