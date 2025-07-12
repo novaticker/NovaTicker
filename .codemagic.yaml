@@ -1,11 +1,8 @@
 workflows:
-  build_python_app:
+  build_python:
     name: Build Python App
-    max_build_duration: 10
     environment:
       python: "3.9"
     scripts:
       - pip install -r requirements.txt
       - python main.py
-    artifacts:
-      - "**/*.apk"
